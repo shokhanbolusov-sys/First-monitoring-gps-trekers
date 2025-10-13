@@ -1,0 +1,215 @@
+:root {
+    --container-width: 1200px;
+    --container-padding: 16px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+span,
+button,
+label,
+input,
+textarea {
+    display: inline-block;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.body {
+    background: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    width: calc(var(--container-width) + (var(--container-padding) * 2));
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+
+
+/*=================================================================
+TYPOGRAPHY
+================================================================== */
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*==============================================================
+Border & radius 
+==============================================================*/
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rounded-sm {
+    border-radius: 6px;
+}
+
+.rounded-md {
+    border-radius: 8px;
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
+
+.rounded-xl {
+    border-radius: 14px;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/*==============================================================
+TRANSITIONS 
+===============================================================*/
+.transition {
+    transition: background-color 150ms ease-in-out;
+}
+
+.transition-colors {
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+
+
+
+
+.app-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* ==================================================================
+Левая и правая части  
+======================================================================*/
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* =================================================================
+Поисковик 
+====================================================================*/
+.search-container {
+    position: relative;
+    display: flex;
+    gap: 9px;
+}
+
+.search-input {
+    padding: 8px 36px;
+    width: 256px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-size: 16px;
+    outline: none;
+    transition: all 150ms ease-in-out;
+}
+
+.search-input:focus {
+    outline: 1px solid #2563eb;
+}
+
+/* =================================================================
+Настройка 
+=====================================================================*/
+.icons-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color all 150ms ease-in-out;
+    position: relative;
+}
+
+.icons-button:hover {
+    background-color: #bfcbe4;
+}
+
+/* Avatar */
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #1d4ed8;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+
+}
