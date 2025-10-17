@@ -54,7 +54,7 @@
                 <!-- Карта 1 -->
                 <div class="stat-card">
                     <div class="stat-card-header">
-                        <div class="stat-icon stat-icon-blue"> 
+                        <div class="stat-icon stat-icon-blue">
                         </div>
                         <h4 class="titke-4">Всего ТС</h4>
                         <div class="stat-value">25</div>
@@ -65,11 +65,12 @@
                     </div>
                 </div>
 
-                <!-- Карта 2  -->
-                  <div class="stat-card">
+                <!-- Карта 2  Moving-->
+                <div class="stat-card">
                     <div class="stat-card-header">
                         <div class="stat-icon stat-icon-green">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="m3 11 18-5v12L3 14v-3z"></path>
 
                             </svg>
@@ -81,11 +82,235 @@
                     </div>
                 </div>
 
+                <!--Карта 3. Idle -->
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icons stat-icon-orange">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currenyColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline point="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="title-4">На стоянке</h4>
+                            <div class="stat-value">10</div>
+                            <div class="stat-change">40% от общего</div>
+                        </div>
+                    </div>
+                </div>
 
+                <!--Карта 4. Offline -->
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon stat-icon-gray">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currenyColor"
+                                stroke-width="2">
+                                <path d="М18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="title-4">Не на связи</h4>
+                            <div class="stat-value">3</div>
+                            <div class="stat-change stat-change-negative">Требует внимания</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
+
+
         </section>
+
+
+        <!-- Переключатель видов  -->
+        <section class="view-controls">
+            <div class="view-controls-inner">
+                <div class="view-tabs">
+                    <button class="view-tab view-tab-active">
+                        <svg class="view-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                        </svg>
+                        <span>Карта</span>
+                    </button>
+                    <button class="view-tab">
+                        <svg class="view-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"></path>
+                            <path d="m19 9-5 5-4-4-3 3"></path>
+                        </svg>
+                        <span>Аналитика</span>
+                    </button>
+                </div>
+
+                <div class="view-actions">
+                    <button class="btn btn-outline">
+                        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Экспорт отчета</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--  Элемент списка транспорта -->
+        <div class="vehicle-list">
+            <div class="vehicle-list-header">
+                <h3>Транспорные средства</h3>
+                <span class="vehicle-count">25</span>
+            </div>
+            <!-- 1 машина -->
+            <div class="vehicle-list-items">
+                <div class="vehicle-item vehicle-item-active">
+                    <div class="vehicle-item-header">
+                        <div>
+                            <h4 class="vehicle-name">Cargo Truck 01</h4>
+                            <p class="vehicle-plate">01 A 123 BC</p>
+                        </div>
+                        <span class="vehicle-status vehicle-status-moving"></span>
+                    </div>
+
+                    <div class="vehicle-item-info">
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            <span class="info-text">75 км/ч</span>
+                        </div>
+
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="into-text">Tashkent, Amir Temur</span>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-item-footer">
+                        <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="12 6 12 12 16 14"></path>
+                        </svg>
+                        <small>Обновление 2 мин назад</small>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 2 машина -->
+             <div class="vehicle-list-items">
+                <div class="vehicle-item vehicle-item-active">
+                    <div class="vehicle-item-header">
+                        <div>
+                            <h4 class="vehicle-name">Cargo Truck 02</h4>
+                            <p class="vehicle-plate">01 A 123 BC</p>
+                        </div>
+                        <span class="vehicle-status vehicle-status-moving"></span>
+                    </div>
+
+                    <div class="vehicle-item-info">
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            <span class="info-text">75 км/ч</span>
+                        </div>
+
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="into-text">Tashkent, Amir Temur</span>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-item-footer">
+                        <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="12 6 12 12 16 14"></path>
+                        </svg>
+                        <small>Обновление 2 мин назад</small>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 3 машина -->
+             <div class="vehicle-list-items">
+                <div class="vehicle-item vehicle-item-active">
+                    <div class="vehicle-item-header">
+                        <div>
+                            <h4 class="vehicle-name">Cargo Truck 03</h4>
+                            <p class="vehicle-plate">01 A 123 BC</p>
+                        </div>
+                        <span class="vehicle-status vehicle-status-moving"></span>
+                    </div>
+
+                    <div class="vehicle-item-info">
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            <span class="info-text">75 км/ч</span>
+                        </div>
+
+                        <div class="vehicle-info-row">
+                            <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="into-text">Tashkent, Amir Temur</span>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-item-footer">
+                        <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="12 6 12 12 16 14"></path>
+                        </svg>
+                        <small>Обновление 2 мин назад</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-header">
+                <h3>Cтатус транспорта</h3>
+                <p class="chart-desription">Распределение по текущему статусу</p>
+            </div>
+
+            <div class="chart-body">
+                <!-- Здесь размещается canvas или SVG для графика -->
+                <canvas id="statusChart" width="=400" height="300"></canvas>
+            </div>
+        </div>
+
+
+
 
 
         </main>

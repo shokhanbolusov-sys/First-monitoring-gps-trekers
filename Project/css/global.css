@@ -213,3 +213,350 @@ TRANSITIONS
     font-size: 14px;
 
 }
+
+
+/*======================================================================= 
+stats cards 
+========================================================================*/
+
+.stats-section {
+    padding: 16px 24px;
+}
+
+.stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-icon-blue {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.stat-icon-green {
+    background-color: #d1fae5;
+    color: #10b981;
+}
+
+.stat-icon-orange {
+    background-color: #fef3c7;
+    color: #f59e0b;
+}
+
+.stat-icon-gray {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+.title-4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.stat-change {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.stat-change-positive {
+    color: #10b981;
+}
+
+.stat-change-negative {
+    color: #ef4444;
+}
+
+
+/*================================================== 
+Переключатель видов  
+=================================================*/
+
+.view-controls {
+    padding: 0 24px 16px;
+}
+
+.view-controls-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.view-tabs {
+    display: inline-flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.view-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px 16px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+    transition: all 150ms ease-in-out;
+}
+
+.view-tab:hover {
+    background-color: #F3F4F6;
+}
+
+.view-tab-active {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+.view-tab-active:hover {
+    background-color: #1D4ED8;
+}
+
+.view-tab-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.view-actions {
+    display: flex;
+    gap: 16px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    border: 1px solid transparent;
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #374151;
+}
+
+.btn-outline:hover {
+    background-color: #F3F4F6;
+}
+
+.btn-primary {
+    background-color: #1D4ED8;
+}
+
+.btn-primary:hover {
+    background-color: #1E40AF;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+
+/*========================================================== 
+Элемент списка транспорта
+===========================================================*/
+
+.vehicle-list {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px - 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicle-list-header {
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vehicle-count {
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.vehicle-list-items {
+    overflow-y: auto;
+    max-width: calc(100vh - 400px);
+}
+
+.vehicle-item {
+    padding: 12px;
+    border-bottom: 1px solid #E5E7EB;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+}
+
+.vehicle-item:hover {
+    background-color: #F9FAFB;
+}
+
+.vehicle-item-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.vehicle-name {
+    font-size: 16px;
+    color: #111827;
+    margin-bottom: 2px;
+}
+
+.vehicle-plate {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.vehile-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    margin-top: 4px;
+}
+
+.vehicle-list-moving {
+    background-color: #10B981;
+}
+
+.vehile-status-idle {
+    background-color: #F59E0B;
+}
+
+.vehile-status-offline {
+    background-color: #6B7280;
+}
+
+.vehicle-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.vehicle-info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-icon {
+    width: 14px;
+    height: 14px;
+    color: #9CA3AF;
+    flex-shrink: 0;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.vehicle-item-footer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.footer-icon {
+    width: 12px;
+    height: 12px;
+    color: #9CA3AF;
+}
+
+/* График */
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+@media (min-width: 1024px) {
+    .charts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.chart-container {
+    background-color: #EFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.chart-header {
+    margin-bottom: 16px;
+}
+
+.chart-header h3 {
+    margin-bottom: 4px;
+}
+
+.chart-body {
+    height: 300px;
+    position: relative;
+}
+
+.chart-large .chart-body {
+    height: 400px;
+}
